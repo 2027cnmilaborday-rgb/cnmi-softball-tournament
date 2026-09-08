@@ -98,7 +98,26 @@ Visit Website
 © 2027 CNMI Labor Day Softball Tournament
 </footer>
 
-script.jsscript>
+function toggleMenu() {
+const menu = document.querySelector(".nav-links");
+menu.classList.toggle("active");
+}
+ 
+document.addEventListener("DOMContentLoaded", () => {
+ 
+document
+.querySelectorAll(".nav-links a")
+.forEach(link => {
+ 
+link.addEventListener("click", () => {
+document
+.querySelector(".nav-links")
+.classList.remove("active");
+});
+ 
+});
+ 
+});
 
 </body>
 </html>
